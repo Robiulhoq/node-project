@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hurra we learn how to send file</h1>
+    <form action="addProduct" method="post">
+        <input type="text" placeholder="name" name="name">
+        <input type="text" placeholder="" name="price">
+        <input type="text" name="quantity">
+        <button type="submit">Add products</button>
+    </form>
+
+    <script>
+        fetch('/products')
+        .then(res => res.json())
+        .then(result => console.log(result))
+    </script>
+</body>
+</html>
